@@ -1,0 +1,24 @@
+main{
+    background-color: brown;
+}
+
+.content{
+    width: 80%;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about{
+    display: flex;
+    background-color: blue;    
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+a{
+    text-decoration: none;
+}
