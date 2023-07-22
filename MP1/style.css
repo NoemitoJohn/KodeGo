@@ -1,22 +1,93 @@
+
+p, h1, h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+body {
+    margin: 0px;
+    font-size: large;
+}
+
 main{
     background-color: brown;
 }
 
 .content{
-    width: 80%;
+    width: 70%;
     background-color: aqua;
     margin-left: auto;
     margin-right: auto;
+
 }
+
+img{
+    margin: 2px;
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+}
+
 .about{
     display: flex;
-    background-color: blue;    
+    padding: 2px;
+    background-color: cornflowerblue; 
+    gap: 1em;
+    border-radius: 10px;
+    border: 2px solid black;
+    
 }
+.subtitle__container{
+    margin-top: 1em;
+}
+
+@media (max-width:1164px){
+    .about__subtitle{
+       
+       font-size: medium;
+    }
+    .qoute{
+       
+    }
+    .about{
+        gap: 5px;
+    }
+}
+@media (max-width: 928px) {
+    .content{
+        width: 80%;
+    }
+    .about 
+    {   
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+        
+    }
+    
+    .about__profile{
+        margin: auto;
+        width: auto;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .about__subtitle{
+        margin-left: 20%;
+        margin-right: 20%;
+        
+    }
+    
+    
+    
+}
+
 ul{
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    gap: 5px;
+    gap: 10px;
+    margin: 0px;
 }
 
 a{
