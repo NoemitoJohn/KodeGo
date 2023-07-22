@@ -1,21 +1,25 @@
 
 p, h1, h4 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
 
 }
+
 body {
     margin: 0px;
     font-size: large;
 }
 
 main{
-    background-color: brown;
+    /* background-color: brown; */
 }
-
+ul
+{
+    list-style: none; 
+}
 .content{
     width: 70%;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-left: auto;
     margin-right: auto;
 
@@ -31,14 +35,34 @@ img{
 .about{
     display: flex;
     padding: 2px;
-    background-color: cornflowerblue; 
+    /* background-color: cornflowerblue;  */
     gap: 1em;
     border-radius: 10px;
     border: 2px solid black;
     
 }
+.about__subtitle{
+    display: flex;
+    /* background-color: blue; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .subtitle__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
     margin-top: 1em;
+    
+    
+}
+
+
+.about_links_ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
 }
 
 @media (max-width:1164px){
@@ -82,7 +106,7 @@ img{
     
 }
 
-ul{
+.navbar_ul{
     display: flex;
     list-style: none;
     justify-content: flex-end;
