@@ -1,4 +1,3 @@
-
 p, h1, h4 {
     margin-top: 0;
     margin-bottom: 0;
@@ -10,13 +9,38 @@ body {
     font-size: large;
 }
 
-main{
-    /* background-color: brown; */
+.separator{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid gray;
+}
+
+.navbar{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    
+}
+
+.navbar_ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2em;
+    margin: 0px;
+
+}
+
+a{
+    text-decoration: none;
 }
 ul
 {
     list-style: none; 
+    padding: 0px;
 }
+
+
 .content{
     width: 70%;
     /* background-color: aqua; */
@@ -26,10 +50,13 @@ ul
 }
 
 img{
-    margin: 2px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: .7em;
     border-radius: 5px;
     width: 400px;
     height: 400px;
+    
 }
 
 .about{
@@ -38,45 +65,76 @@ img{
     /* background-color: cornflowerblue;  */
     gap: 1em;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 1.5px solid lightgrey;
     
 }
+
 .about__subtitle{
     display: flex;
-    /* background-color: blue; */
     flex-direction: column;
-    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+    gap: 1.5em;
 }
 
 .subtitle__container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
-    margin-top: 1em;
+    gap: 10px;
+    margin-top: 1.5em;
     
     
 }
 
 
+
+.about__details{
+    display: flex;
+    
+    flex-direction: column;
+    /*width: auto;
+    justify-content: flex-end;
+    align-content: center;
+     align-items:  center; 
+    flex-wrap: wrap; 
+    */
+    gap: .8em;  
+    margin: auto;
+}
+.about__details__menu{
+    display: flex;
+    gap: .7em;
+    
+}
+.menu__img{
+    width: 1.5em;
+    height: 1.5em;
+}
+.menu__subtitle{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .about_links_ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2.5em;
     padding: 0px;
 }
-
+.about__link__logo{
+    width: 2em;
+    height: 2em;
+}
 @media (max-width:1164px){
     .about__subtitle{
        
        font-size: medium;
     }
-    .qoute{
-       
-    }
     .about{
-        gap: 5px;
+        gap: 1em;
     }
 }
+
 @media (max-width: 928px) {
     .content{
         width: 80%;
@@ -104,16 +162,4 @@ img{
     
     
     
-}
-
-.navbar_ul{
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-    gap: 10px;
-    margin: 0px;
-}
-
-a{
-    text-decoration: none;
 }
