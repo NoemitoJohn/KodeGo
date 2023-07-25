@@ -1,3 +1,7 @@
+*{
+    line-height: 1.5;
+}
+
 p, h1, h4, h3, h2 {
     margin-top: 0;
     margin-bottom: 0;
@@ -7,6 +11,8 @@ p, h1, h4, h3, h2 {
 body {
     margin: 0px;
     font-size: large;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .separator_xl{
@@ -139,7 +145,7 @@ img{
 .skills__container{
     display: flex;
     gap: 2em;
-    align-items: center;
+    /* align-items: center; */
     /* margin-top: 1em; */
     
 }
@@ -157,6 +163,7 @@ img{
 }
 .skills__list_container{
     display: flex;
+    gap: 1.2em;
 }
 .skills__list__section {
     display: flex;
@@ -173,8 +180,12 @@ img{
     height: 25px;
 }
 .skills__item p{
+
     text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: auto;
     font-weight: bolder;
+
 }
 
 
