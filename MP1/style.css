@@ -1,4 +1,4 @@
-p, h1, h4 {
+p, h1, h4, h3, h2 {
     margin-top: 0;
     margin-bottom: 0;
 
@@ -9,7 +9,7 @@ body {
     font-size: large;
 }
 
-.separator{
+.separator_xl{
     margin-top: 1em;
     margin-bottom: 1em;
     border: 1px solid gray;
@@ -33,11 +33,13 @@ body {
 
 a{
     text-decoration: none;
+    color: black;
 }
 ul
 {
     list-style: none; 
     padding: 0px;
+    margin: 0;
 }
 
 
@@ -62,14 +64,13 @@ img{
 .about{
     display: flex;
     padding: 2px;
-    /* background-color: cornflowerblue;  */
     gap: 1em;
     border-radius: 10px;
     border: 1.5px solid lightgrey;
     
 }
-
 .about__subtitle{
+    
     display: flex;
     flex-direction: column;
     margin-top: auto;
@@ -114,6 +115,7 @@ img{
 .menu__subtitle{
     margin-top: auto;
     margin-bottom: auto;
+    
 }
 .about_links_ul{
     display: flex;
@@ -125,6 +127,58 @@ img{
     width: 2em;
     height: 2em;
 }
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: .5em 1em;
+}
+.skills__container{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    /* margin-top: 1em; */
+    
+}
+.skills__subtitle{
+    flex: 2;
+    font-size: 1.4rem ;
+    
+}
+.skills__list{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+   gap: 10px;
+
+}
+.skills__list_container{
+    display: flex;
+}
+.skills__list__section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+.skills__item{
+    display: flex;
+    gap: 15px;
+}
+.skills__item svg{
+    width: 25px;
+    height: 25px;
+}
+.skills__item p{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+
 @media (max-width:1164px){
     .about__subtitle{
        
@@ -160,6 +214,9 @@ img{
         
     }
     
-    
+    .skills__container{
+        flex-direction: column;
+        align-items: normal;
+    }
     
 }
