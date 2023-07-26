@@ -15,10 +15,15 @@ body {
 
 }
 
-.separator_xl{
+.separator_strong{
     margin-top: 1em;
     margin-bottom: 1em;
     border: 1px solid gray;
+}
+.separator_light{
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    border: 1px solid lightgray;
 }
 
 .navbar{
